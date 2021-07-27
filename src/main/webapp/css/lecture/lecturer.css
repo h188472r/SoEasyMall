@@ -1,0 +1,309 @@
+/* 網頁框 */
+#pageWrapper {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#uk_breadcrumb {
+	flex-wrap: wrap;
+	list-style: none;
+	display: flex;
+	font-size: 18px;
+}
+
+#headerBlank {
+	padding: 10px;
+}
+
+/* 輪播區 */
+body{
+/*     background-image: url(images/background.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}  
+.wrapper{
+    border: 1px solid grey;
+    border-radius: 10px;
+    position: relative;
+    width:42%;
+    height:430px;
+    overflow: hidden;
+    margin: 3% 0%;
+    margin-left: 5%;
+    float: left;
+}
+ul{
+    margin:0;
+    padding: 0;
+    position: absolute;
+}
+li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 講座列表字型樣式 */
+.header-title {
+	/*   margin-right: auto; */
+	position: relative;
+	text-align: left;
+	color: #353535;
+	font-family: 'Oswald', sans-serif;
+	font-size: 26px;
+	margin: 0;
+}
+
+.box{
+	column-count: 2;
+/* 	float: left; */
+	column-gap: 2em;
+	padding-right: 5%;
+/* 	background-attachment: fixed; */
+}
+
+.lectureImg{
+	width: 350px;
+	max-height: auto;
+}
+
+
+.box boxRight{
+/* 	float: right; */
+	position:relative;
+	padding-top: 7%;
+}
+
+.archivedLectures_box boxRight{
+/* 	float: right; */
+	position:relative;
+}
+
+/* p{ */
+/* 	color: darkgreen; */
+/* 	font-size: large; */
+/* 	font-weight:bold; */
+/* 	line-height: 1.5; */
+/* 	padding-top: 3%; */
+/* } */
+
+font.lecturerName{
+	padding: 2% 5%;
+/* 	padding-left: 5%; */
+	font-weight: bold;
+	font-size: x-large;
+	background: darkgreen;
+  	color: #fff;
+  	text-shadow: 0 0.05em 0.08em rgba(0,0,0,0.7);
+  	display: inline-block;
+  	line-height: 1;
+}
+
+font.lecturerTalent, font.lecturerExp{
+	padding-top: 3%;
+/* 	padding-left: 5%; */
+	color: darkgreen;
+	font-size: medium;
+/* 	font-weight:bold; */
+}
+
+font.lecturerExp{
+	padding-top: 3%;
+/* 	padding-left: 5%; */
+	color: darkgreen;
+	font-size: small;
+/* 	font-weight:bold; */
+}
+
+
+/* 表頭按鈕 */
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	padding: 10px 25px;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/* 5 */
+.btn-5 {
+	box-shadow: 4px 4px 8px gray;
+	background: #fff;
+	color: #000;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+
+.btn-5:hover {
+	background: #fff;
+	color: #000;
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px
+		20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+
+.btn-5:before, .btn-5:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #000;
+	transition: 400ms ease all;
+}
+
+.btn-5:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+.btn-5:hover:before, .btn-5:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+/* 搜尋bar */
+.search-bar {
+	position: relative;
+}
+
+/* 看更多按鈕 */
+.custom2-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 4 */
+.btn-4 {
+  background-color: #4dccc6;
+background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+.custom-eft {
+  margin: 2% 0 2% 0;
+  padding: 0 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-size: 2em;
+}
+.eft12 {
+  position: relative;
+  padding-top: 3%;
+}
+.eft12:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  width:90px; 
+  background: #c2e7cb;
+  bottom: 1px;
+}
+ .eft12 span{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #045518, #045518 50%, #045518 50%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: large;
+  font-weight: bold;
+}

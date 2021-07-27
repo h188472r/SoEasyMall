@@ -1,0 +1,262 @@
+.customer-main {
+	max-width: 100%;
+	justify-content: center;
+	
+}
+
+.customer-main div{
+	max-width: 100%;
+}
+
+.customer-img {
+	background-color: rgb(29, 59, 42);
+	width: 40%;
+	height: 620px;
+	float: left;
+	margin-left: 10%;
+/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-img div{
+	
+	width: 320px;
+	height: 300px;
+	border-radius: 5%;
+	background-color: white;
+}
+
+.customer-img img{
+	
+	width: 320px;
+	height: 300px;
+	border-radius: 5%;
+}
+
+.customer-img img:hover{
+	opacity: 65%;
+	width: 320px;
+	height: 300px;
+	border-radius: 5%;
+}
+
+.customer-information {
+	width: 40%;
+	height: 620px;
+	float: left;
+	margin-right: 10%;
+	/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-information-inside{
+	width: 460px;
+	height: 400px;
+	/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-information-items {
+	width: 100%;
+	height: 100%;
+}
+
+.customer-information-items > div{
+	width: 100%;
+	height: 20%;
+	font-size: 22px;
+	
+	display: flex;
+	align-items: center; 
+}
+
+.customer-information-items > div > div{
+	height: 100%;
+	
+	display: flex;
+	align-items: center; 
+}
+
+.customer-information-items > div > div input{
+	margin: 0px;
+	height: 70%;
+	width: 100%;
+	font-size: 22px;
+	cursor: auto;
+}
+
+
+.customer-information-items .customer-information-items-button{
+	justify-content: flex-end;
+	right: 0%;
+}
+
+
+.customer-information-items button{
+/* 	height: 35px; */
+	width: 25%;
+	height: 60%;	
+	font-size: 30px;
+	border-radius: 4px;
+	border-color: #FFF;
+	background-color: #C9D8BF;
+	color: #fff;
+/* 	display: flex; */
+/*   	align-items: center; */
+/*   	justify-content: center; */
+	cursor: pointer;
+}
+
+.customer-information-items button:hover {
+	opacity: 70%;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+.customer-health-information {
+	width: 40%;
+	height: 620px;
+	float: left;
+	margin-left: 10%;
+	
+	/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-health-information-inside{
+	width: 460px;
+	height: 400px;
+	/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-health-information-items {
+	width: 100%;
+	height: 100%;
+}
+
+.customer-health-information-items > div{
+	width: 100%;
+	height: 15%;
+	font-size: 22px;
+
+	border: 5px;
+	border-color: #C9D8BF;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-health-information-items > div > div{
+	height: 100%;
+	display: flex;
+	align-items: center; 
+}
+
+.customer-health-information-items > div > div label{
+	font-size: 22px;
+}
+
+.customer-health-information-items > div > div input{
+	margin: 0px;
+	height: 70%;
+	width: 100%;
+	font-size: 22px;
+	cursor: auto;
+}
+
+.customer-health-information-items .customer-health-information-items-button{
+	justify-content: flex-end;
+	right: 0%;
+}
+
+
+.customer-health-information-items button{
+/* 	height: 35px; */
+	width: 25%;
+	height: 80%;	
+	font-size: 30px;
+	border-radius: 4px;
+	border-color: #FFF;
+	background-color: #C9D8BF;
+	color: #fff;
+/* 	display: flex; */
+/*   	align-items: center; */
+/*   	justify-content: center; */
+	cursor: pointer;
+	
+}
+
+.customer-health-information-items button:hover {
+	opacity: 70%;
+}
+
+.customer-favorite-map {
+	background-color: #C9D8BF;
+	width: 40%;
+	height: 620px;
+	float: left;
+	margin-right: 10%;
+}
+
+.customer-favorite-map-items {
+	height: 100%;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+.customer-post {
+	background-color: #8cac77;
+	width: 40%;
+	height: 620px;
+	float: left;
+	margin-left: 10%;
+/* 	水平垂直置中 */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.customer-post-items {
+	background-color: white;
+	height: 100%;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.addFavorite {
+	width: 250px;
+	height: 250px;
+	margin: 0 0 10px 0;
+	opacity: 50%;
+}
+
+.addFavorite:hover {
+	opacity: 100%;
+}
+
+.addFavoriteProduct{
+	width: 250px;
+	height: 250px;
+	margin: 0 0 10px 0;
+}
+
+.addFavoritePost {
+	width: 250px;
+	height: 250px;
+	margin: 0 0 10px 0;
+}
+
+

@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/********************************************************* */
+
+
+/* Import Stylesheets */
+@import url('flaticon.css');
+
+
+/****************************************************** */
+/******************** 07. product ***************** */
+/****************************************************** */
+
+.product {
+    transition: 0.4s;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #F3F3F3;
+}
+.product:hover {
+    box-shadow: 0px 0px 30px rgba(41, 38, 51, 0.09);
+}
+.product .product-img-wrap {
+    min-height: 235px;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.product .product-img-wrap img {
+    transition: 0.5s;
+}
+.product:hover .product-img-wrap {
+    background: rgba(61, 202, 121, 0.1);
+}
+
+.product:hover .product-img-wrap img {
+    transform: scale(1.25) rotate(20deg);
+}
+
+.product-content-wrap {
+    padding: 25px;
+}
+
+.product-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* product-action */
+.product-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product .add-to-btn.small-btn {
+    color: #3DCA79;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-width: 129px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.product .add-to-btn.small-btn * {
+    position: relative;
+    z-index: 1;
+}
+
+.product .add-to-btn.small-btn:after {
+    content: '';
+    height: 100%;
+    width: 30px;
+    left: 8px;
+    top: 0;
+    opacity: 0;
+    transition: width 0.5s;
+    border-radius: 15px;
+    position: absolute;
+    background: #3dca79;
+}
+.product:hover .add-to-btn.small-btn:after {
+    width: 120px;
+    opacity: 1;
+}
+.product .add-to-btn.small-btn span {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    opacity: 0;
+    transform: scale(0);
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.product .product-price {
+    opacity: 1;
+    margin: 0 0 0 12px;
+}
+.product:hover .product-price {
+    opacity: 0;
+}
+
+.product .add-to-btn.small-btn i:before {
+    font-size: 14px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #3DCA79;
+    margin-right: 5px;
+    background: #FFF;
+}
+
+.product:hover .add-to-btn.small-btn span {
+    color: #fff;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.product .add-wishlist i {
+    transition: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+.product:hover .add-wishlist i {
+    transform: scale(1);
+    opacity: 1;
+}
+.product .add-wishlist.wish i {
+    color: #FFFFFF;
+    background: #3DCA79;
+}
+
+/* ====modal===== */
+.product .product-img-wrap .quick-view {
+    position: absolute;
+    display: block;
+    background: rgba(255, 255, 255, 0.82);
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    height: 40px;
+    color: #3dca79;
+    font-weight: 600;
+}
+.product:hover .product-img-wrap .quick-view {
+    opacity: 1;
+}
+.product-modal .modal-header {
+    border-bottom: 0 solid;
+}
+
+
+/****************************************************** */
+/******************** product ***************** */
+/****************************************************** */
+
+
+.product-price {
+	color: #292633;
+}
+
+.product-content a{
+    color: #292633;
+    transition: 0.4s;
+}
+
+.product-content a:hover {
+    color: #3DCA79;
+}
+
+
+ /*** 
+====================================================================
+                        End Footer Section
+====================================================================
+ ***/

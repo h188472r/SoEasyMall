@@ -1,0 +1,185 @@
+/* 網頁框 */
+#pageWrapper {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#uk_breadcrumb {
+	flex-wrap: wrap;
+	list-style: none;
+	display: flex;
+	font-size: 18px;
+}
+
+#headerBlank {
+	padding: 10px;
+}
+
+/* 輪播區 */
+body{
+/*     background-image: url(images/background.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}  
+.wrapper{
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    width:80%;
+    height:500px;
+    overflow: hidden;
+    margin: 3% auto;
+}
+
+.div1{
+	width: 90%;
+	margin: 1% auto;
+}
+.div2{
+	width: 80%;
+	margin: 1% auto;
+}
+
+/* 講座列表字型樣式 */
+.header-title {
+	/*   margin-right: auto; */
+	position: relative;
+	text-align: left;
+	color: #353535;
+	font-family: 'Oswald', sans-serif;
+	font-size: 26px;
+	margin: 0;
+}
+
+.lectureImg{
+	max-width: 100%;
+	max-height: auto;
+	padding-top: 5%;
+}
+
+.lectureDate{
+	font-family:Varela Round;
+	color: #38ac55;
+	font-size: x-large;
+	font-weight:bold;
+	line-height: 1;
+}
+
+.lectureCategory, .lectureStatus, .lectureAddress{
+	color: #38ac55;
+	font-size: large;
+	font-weight:bold;
+	line-height: 1;
+}
+
+.lectureContent{
+	color: grey;
+	font-size: large;
+	line-height: 2;
+}
+
+
+/* 表頭按鈕 */
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	padding: 10px 25px;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/* 5 */
+.btn-5 {
+	box-shadow: 4px 4px 8px gray;
+	background: #fff;
+	color: #000;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+
+.btn-5:hover {
+	background: #fff;
+	color: #000;
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px
+		20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+
+.btn-5:before, .btn-5:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #000;
+	transition: 400ms ease all;
+}
+
+.btn-5:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+.btn-5:hover:before, .btn-5:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+/* 搜尋bar */
+.search-bar {
+	position: relative;
+}
+
+
+/* 標題綠底線 */
+.custom-eft {
+  margin: 1.5% 0;
+  padding: 0 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+/*   font-size: 2em; */
+  line-height: 1;
+}
+.eft12 {
+  position: relative;
+/*   padding-top: 3px; */
+}
+.eft12:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  width:130px; 
+  background: #c2e7cb;
+  bottom: 1px;
+}
+ .eft12 span{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #045518, #045518 50%, #045518 50%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: x-large;
+  font-weight: bold;
+}

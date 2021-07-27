@@ -1,0 +1,122 @@
+/* @import url('flaticon.css'); */
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146, 146, 146, 1.00);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#logo {
+    float: left;
+    width: 222px;
+    text-align: center;
+    height: 140px;
+
+}
+
+.mainWrapper header nav {
+    float: right;
+    width: calc(100% - 230px);
+    height: 70px;
+    text-align: right;
+    line-height: 70px;
+}
+
+header nav a {
+    color: #007500;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    background-color: #E0E0E0;
+    color: #3DCA79;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.1s;
+/*     transition-delay: 0.1s; */
+	font-family: Flaticon;
+	font-weight:bold;
+}
+
+#headerLinks {
+    float: right;
+    width: calc(100% - 230px);
+    height: 70px;
+    text-align: right;
+    line-height: 70px;
+}
+
+#headerLinks a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding-right: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#headerLinks a:hover {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mainWrapper {
+	top: 0;
+    width: 100%;
+/*     padding-left: 10%; */
+    background-color: white;
+}
+
+.mainWrapper footer {
+    clear: both;
+    overflow: auto;
+    background-color: #1d3b2a;
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.8;
+    padding-top: 22px;
+    padding-left: 22px;
+    text-align: center;
+    padding-bottom: 22px;
+    padding-right: 22px;
+}
+
+.mainWrapper footer div {
+    width: 90%;
+    float: left;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: rgba(255, 255, 255, 1.00);
+    text-align: justify;
+}
+
+.mainWrapper section div {
+    width: 100%;
+    float: left;
+/*     padding-left: 2%; */
+/*     padding-right: 2%; */
+    color: rgba(255, 255, 255, 1.00);
+    text-align: center;
+}
+
+footer div a {
+    color: rgba(146, 146, 146, 1.00);
+    font-size: 18px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 5px;
+}
+
+footer div a:hover {
+    background-color: #C9D8BF;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    
+}

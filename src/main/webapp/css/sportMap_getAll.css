@@ -1,0 +1,242 @@
+@charset "UTF-8";
+body {
+/*     background: #f2f2f2; */
+    font-family: 'proxima-nova-soft', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .post-module {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #FFFFFF;
+    min-width: 270px;
+    height: 470px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+  .post-module:hover,
+  .hover {
+    -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  }
+  .post-module:hover .thumbnail img,
+  .hover .thumbnail img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  .post-module:hover .post-content .description,
+  .hover .post-content .description {
+    max-height: 100px;
+  }
+  .post-module .thumbnail {
+    /* 調顯示地圖大小&地圖框線顏色 */
+    background: white;
+    height: 300px;  
+    overflow: hidden;
+  }
+  .post-module .thumbnail .date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #00db6d ;
+    width: 55px;
+    height: 55px;
+    padding: 12.5px 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .post-module .thumbnail .date .day {
+    /* 調右上方圖示內字大小 */
+    font-size: 18px;
+  }
+  .post-module .thumbnail .date .month {
+    /* 調右上方圖示內字大小 */
+    font-size: 12px;
+    text-transform: uppercase;
+  
+  }
+ 
+  .post-module .post-content {
+    /* 顯示地點區塊樣式 */
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 30px;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  }
+  .post-module .post-content .category {
+    /* 顯示MAP logo */
+    position: absolute;
+    top: -34px;
+    left: 0;
+    background: #00db6d;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+ 
+  .post-module .post-content .sub_title {
+    /* 顯示運動地點sub_title樣式 */
+    margin: 0;
+    padding: 0 0 10px;
+    color:#007979;
+    font-size: 18px;
+    font-weight:bold;
+    
+    
+  }
+  .post-module .post-content .description {
+    /* 顯示地址(隱藏)區塊 */
+    display: block;
+    max-height: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8em;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    overflow: hidden;
+  }
+  .post-module .post-content .post-meta {
+    /* 詳細資訊離運動地點的顏色與距離 */
+    margin: 20px 0 0;
+    color: #999999;
+    font-weight: bold;
+  }
+  .post-module .post-content .post-meta .timestamp {
+    /* 類別跟詳細資訊的距離 */
+    margin: 0 16px 0 0;
+    font-size:18px;
+  }
+  .post-module .post-content .post-meta a {
+    /* 詳細資訊link樣式 */
+    color: #999999;
+    text-decoration: none;
+    font-size:18px;
+  }
+  
+  .container {
+    max-width: 100%;
+    /* min-width: 640px; */
+    margin: 0 auto;
+  }
+  .container:before,
+  .container:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .container .column {
+    /* 顯示整個cloumn寬度 */
+    /* width: 50%; */
+    width: 350px;
+    padding: 0 25px;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 20px;
+    margin-top:20px;
+    margin-left:40px;
+    /* display: flex; */
+  }
+  .container .column .demo-title {
+    /* 抬頭(Category樣式) */
+    margin: 0 0 15px;
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .container .info {
+    /* 離頁面邊界的距離 */
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .container .info span .fa {
+    color: #e74c3c;
+  }
+  
+  
+  .style1{
+  display:flex;
+  margin:0px auto;
+  padding:10px 10px;
+  width:410px;
+  
+  }
+  
+  .style2{
+  font-size: 20px;
+  margin-top:20px;
+  display: flex;
+  justify-content: left;
+  width:100%;
+  }
+  
+  .category2{
+   position: absolute;
+    top: -34px;
+    left: 0;
+    background: #5ab500;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }  
+  
+  .date2{
+  position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #ff9914 ;
+    width: 55px;
+    height: 55px;
+    padding: 12.5px 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+  
+  }
